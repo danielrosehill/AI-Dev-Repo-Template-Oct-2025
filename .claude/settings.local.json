@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git config:*)",
+      "Read(//home/daniel/**)",
+      "Bash(git add:*)",
+      "Bash(for dir in /home/daniel/repos/github/AI-Dev-Repo-Template-Oct-2025/*/)",
+      "Bash(do if [ ! -f \"$dirmap.md\" ])",
+      "Bash(then echo \"$dir\")",
+      "Bash(fi)",
+      "Bash(done)",
+      "Bash(while read dir)",
+      "Bash(do if [ \"$dir\" != \"/home/daniel/repos/github/AI-Dev-Repo-Template-Oct-2025\" ])",
+      "Bash(then basename \"$dir\")",
+      "Bash(if [ -f \"$dir/map.md\" ])",
+      "Bash(then echo \"  ✓ map.md exists\")",
+      "Bash(else echo \"  ✗ map.md missing\")",
+      "Bash(for dir in */)",
+      "Bash(do if [ -f \"$dirmap.md\" ])",
+      "Bash(then echo \"✓ $dir%/\")",
+      "Bash(else echo \"✗ $dir%/\")",
+      "Bash(do if [ -f \"$dir/map.md\" ])",
+      "Bash(then echo \"✓ $dir\")",
+      "Bash(else echo \"✗ $dir\")",
+      "Bash(tree:*)",
+      "Bash(xargs:*)",
+      "Bash(find:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

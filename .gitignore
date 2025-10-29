@@ -1,0 +1,39 @@
+# Project-level gitignore
+# This file explicitly allows everything, overriding global gitignore rules
+
+# Exclude management directory
+mgmt/
+
+# Negate all common global ignore patterns
+!*
+!*/
+
+# Allow specific directories that might be globally ignored
+!for-ai/
+!for-ai/**
+!.claude/
+!.claude/**
+
+# Allow specific file types that might be globally ignored
+!*.log
+!*.env
+!*.env.*
+!.env
+!.env.*
+!*.key
+!*.pem
+!*.secret
+!node_modules/
+!.venv/
+!__pycache__/
+!*.pyc
+!.DS_Store
+!Thumbs.db
+!.idea/
+!.vscode/
+!*.swp
+!*.swo
+!*~
+
+# Recursively include all files
+!**/*
